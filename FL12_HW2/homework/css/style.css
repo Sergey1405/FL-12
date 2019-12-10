@@ -1,0 +1,369 @@
+
+@media screen{
+
+.tm-box-bg-title:hover{
+    background-color: lightgrey;
+	
+}
+	
+.tm-main-nav a:hover{
+	background-color: lightskyblue;
+	color: #fff;
+		
+	}	
+
+
+
+
+
+
+
+.tm-main-nav,
+.tm-content-box{
+	box-shadow: 2px 6px 6px 0px rgba(61, 55, 61, 0.7);
+	
+}
+
+
+
+	
+
+
+.tm-banner {
+	background: linear-gradient(to right, lightskyblue, burlywood);
+	border-radius: 5px;
+	
+}
+
+
+
+.tm-content-header{
+	border-radius: 5px;
+	
+}
+
+.tm-banner-inner {
+	background-color: white;
+	text-shadow: 4px 5px 3px #333;
+		
+}
+	
+
+section::before{
+	border: 42px solid transparent;
+	content: '';
+	border-left: 42px solid rgba(137, 196, 244, 1);
+	border-top: 0px solid rgba(137, 196, 244, 1);
+	
+	
+}
+
+
+.heading a.text::after{
+	font-weight: 700; 
+	content:'New';
+	vertical-align: top;
+	color: rgb(230, 16, 80);
+    font-size: 11px;
+	display: inline-block;
+	
+}
+
+.heading ol{
+	
+    list-style-type: lower-alpha;	
+}
+
+																	
+.heading a:hover::before{
+	content:'>';
+	font-size: 15px;
+	color: black;	
+	font-weight: 700;
+	display: inline-block;
+}
+
+.heading h2{
+	
+	text-align: center;
+	color: lightskyblue;	
+}
+
+.flex-2-col{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	}
+
+.tm-section-title{
+	
+  text-align: center;	
+}
+
+.tm-section-description{
+text-indent: 25px;
+vertical-align: middle;
+	
+}
+
+ 
+.tm-box-bg-title li:hover {
+    background-color: lightskyblue;
+
+}
+
+
+.blocks h2{
+	text-align: left;	
+	
+}
+
+
+.blocks ul li img{
+	padding: 9px;
+	
+}
+
+.blocks p:nth-child(3){
+	word-spacing: 10px;
+	letter-spacing: 5px;
+	font-style: oblique;
+		
+}
+
+.blocks ul li:nth-child(2n+1){
+	background-color: rgb(102 178 255);
+	color: white;
+	
+}
+
+.blocks ul li p::first-letter {
+	font-weight: bold;
+	
+}
+
+
+.blocks ul li p {
+	font-style: oblique;
+	
+}
+
+
+.tm-section-description p{
+	text-indent: 25px;
+	
+}
+
+
+.form-control{
+border: none;	
+	
+}
+
+
+#contact h2{
+	
+	text-align: left;
+}
+
+#contact_message{
+border: 1px solid rgba(137,196,244,1);	
+	
+}
+
+
+#contact_name, #contact_email, #contact_subject{
+border-bottom: 1px solid rgba(137,196,244,1);	
+	
+}
+
+input:focus{
+	
+background-color: rgba(137,196,244,1);	
+}
+
+
+
+
+.tm-content-box button{
+	color: rgba(137,196,244,1);
+	background-color: white;
+	border-color: rgba(137,196,244,1);
+	position: relative;
+	left: 944px;
+	
+}
+
+.tm-content-box textarea{
+	background-image: url(../img/email-icon.png);
+	background-repeat: no-repeat;
+	background-size: 32px 32px;	
+	background-position: left 985px top 185px;
+	
+	
+}
+
+
+
+
+
+
+p.tm-banner-text {
+	color: grey;
+	animation-name: move;
+	animation-duration: 4500ms;
+	animation-iteration-count: 1;
+		
+}
+
+
+@keyframes move{
+	from {
+	margin-left: 200px;}
+	
+	to{
+		
+	margin-left: 0px;
+	
+}
+	50%{
+		
+		animation-timing-function: ease-in-out;
+	}
+	
+	70%{
+		
+		animation-play-state: paused;
+	}
+		
+}
+}
+
+@media print{
+	
+	
+	.boxes,
+	#contact,
+	.carousel-indicators,
+	.tm-team-img,
+	.tm-main-nav,
+	.contact-form,
+	.img-contact-us{
+		display: none;
+	}
+	
+
+	
+	
+	    .padding-medium h2{	   
+	        text-align: center;	   
+	       	   
+	    }	   
+	    .padding-medium ol li{	   
+	        list-style-type: none;	   
+	    }	   
+	  	   
+	   	   
+	      
+	
+	    
+
+	.tm-team-description-container{
+		max-width: 100%;
+		
+	}
+
+	
+	
+	.blocks p:nth-child(3){
+	word-spacing: 10px;
+	letter-spacing: 5px;
+	font-style: oblique;	
+		
+	} 
+
+		.flex-2-col p:nth-child(3){
+		margin-left: 150px;
+		margin-right: 150px;
+			}
+	
+	
+	.padding-medium li{
+		text-align: center;
+	}
+	
+	
+	    .tm-team-description-container{	   
+	        text-align: center;	   
+	        	   
+	    }
+	
+	
+	   .padding-medium li:nth-child(2n+1){	   
+	        padding-left: 210px;	   
+	        	   
+	     	   
+	    }
+	
+	 .padding-medium li:nth-child(2n){	   
+	        padding-right: 255px;	   
+	        	   
+	     	   
+	    }
+	
+		.blocks p:nth-child(2){
+		margin-left: 160px;
+		margin-right: 160px;
+		
+	} 
+	
+	.carousel-content p:nth-child(2){
+		margin-left: 160px;
+		margin-right: 160px;
+		
+	}
+	
+
+	   .tm-main-content,
+	   .tm-content-box,	     
+	    .tm-team-description-container{	   
+	        margin: 0;	
+			padding: 0;
+	        	   
+	    }
+	
+	.blocks {
+		margin-bottom: 32px;
+		
+	}
+	
+	
+
+	.flex-2-col h2:nth-child(1), 
+	.padding-medium h2:nth-child(1), 
+	.carousel-content h2:nth-child(1) {
+	text-transform: uppercase;	
+	color: #585D5E;	
+	font-weight: 500;	
+		
+	}
+	
+	 
+	        
+	    	   	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
