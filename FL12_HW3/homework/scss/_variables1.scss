@@ -1,0 +1,44 @@
+$font-1:'Source Sans Pro', sans-serif;
+$font-2:'Hind', sans-serif;
+$font-3:'Fresca', sans-serif;
+$border-radius: 500px 140px;
+$background-image: url(../img/m-h-day.jpg);
+$text-color: rgba(42,42,42,1.00);
+$before-attribute-color: rgba(21,151,235,1.00);
+$banner-gradient: linear-gradient(to right, rgb(0, 125, 0) , rgb(18, 136, 255));
+$button-color: rgba(91, 152, 31, 1.00);
+$header-logo-color: rgba(42,42,42,1.00);
+$header-text-color: rgba(42,42,42,1.00);
+$banner-text-color: rgba(42,42,42,1.00);
+$footer-logo-color: white;
+$background-color: white;
+$card1-text-width: 280px;
+$card2-text-width: 280px;
+$card3-text-width: 260px;
+$background-color: white;
+$cards-footer-color: #101126;
+$card1-position: 66px;
+$card2-position: 71px;
+$card3-position: 69px;
+
+
+	
+	$section: (
+	"position": relative,	
+	"left": 120px,
+    "z-index": -2,
+	"bottom":290px,
+	"height": 595px,
+    "width": 1190px,
+	
+	
+	);
+	
+	
+	$card: (
+	
+   "margin-bottom": 15px,
+   "border-radius": 5px,
+   "height": 200px,
+   "width": 680px,
+		);

@@ -1,0 +1,43 @@
+$font-1:'Source Sans Pro', sans-serif;
+$font-2:'Hind', sans-serif;
+$font-3:'Fresca', sans-serif;
+$border-radius: 500px 140px;
+$background-image: url(../img/m-h-night.jpg);
+$text-color: white;
+$before-attribute-color: rgba(252, 80, 17, 1);
+$banner-gradient: linear-gradient(to right, rgba(250, 152, 25, 1), rgba(76, 25, 25, 1));
+$button-color: rgba(243,149,30,1.00);
+$header-logo-color: white;
+$header-text-color: white;
+$banner-text-color: white;
+$header-logo-color: white;
+$footer-logo-color: white;
+$background-color: rgba(27,27,42,1.00);
+$card1-text-width: 300px;
+$card2-text-width: 315px;
+$card3-text-width: 290px;
+$cards-footer-color: rgba(35,42,57,1.00);
+$card1-position: 58px;
+$card2-position: 56px;
+$card3-position: 56px;
+
+
+	
+	$section: (
+	"position": relative,	
+	"left": 120px,
+    "z-index": -2,
+	"bottom":290px,
+	"height": 595px,
+    "width": 1190px,
+	);
+	
+	
+	$card: (
+	
+   "margin-bottom": 15px,
+   "border-radius": 5px,
+   "height": 200px,
+   "width": 680px,
+		);
+

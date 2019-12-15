@@ -1,0 +1,413 @@
+@mixin cards {
+	position: relative;
+	border-radius: 12px;
+    padding: 8px;
+  
+}
+
+@mixin button {
+	position: relative;
+	padding : 7px 25px 7px 25px;
+    border-radius: 3px;
+	background-color: $button-color;
+	color: white;
+	border: none;
+	
+    
+  
+}
+
+
+@mixin child2{
+	position: relative;
+	top: 60px;
+	text-align: justify;
+	justify-content:  space-between;
+    font-family: $font-3;
+	height: 150px;
+	font-size: 11px;
+}
+
+
+@mixin link{
+	color: white;
+	font-family: $font-1;
+}
+
+
+body {
+
+background-color: $background-color;
+
+}
+
+
+body,p{
+    margin:0;
+    padding: 0;
+}
+
+
+.header{
+	position: relative;
+	left: 70px;
+    display: flex;
+    height: 570px;
+	width: 1100px;
+   	border-bottom-right-radius: $border-radius;
+    z-index: 1;
+    background-image: $background-image;
+	background-repeat: no-repeat;
+    background-size: 100%;
+	margin-top: -150px;
+	
+	
+}
+
+.login{
+	
+	position: absolute;
+	left: 280px;
+	top: 440px;
+	font-size: 13px;
+	@include link;
+}
+
+
+.landing-logo{
+	position: relative;
+	top: 145px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+   
+
+}
+
+.landing-logo img{
+	height: 30px;
+	width: 30px;
+	
+}
+
+
+     
+	.landing-logo p{
+		position: relative;
+		bottom: 39px;
+		left: 28px;
+		
+		font-family: $font-2;
+		font-size: 17px;
+		margin-left: 10px;
+        font-weight: 700;
+        color: $header-text-color;
+         
+     }
+
+.landing-logo span{
+	    position: relative;
+	    top: 12px;
+	    right: 43px;
+        color: $header-text-color;
+        font-size: 8px;
+	    font-weight: 500;
+     }
+
+
+
+.header-wrap{
+    margin-left: 100px;
+}
+
+
+
+.header_heading{
+    position: relative;
+	bottom: -134px;
+    z-index: 1;
+	line-height: 95%;
+    width: 340px;
+    color: $text-color;
+    font-size: 40px;
+    font-family: $font-1;
+    font-weight: 800;
+	padding-bottom: 70px;
+
+   &::before{
+        content: "";
+        position: absolute;
+		background-color: $before-attribute-color;
+		z-index: -1;
+        top: 51px;
+        width: 174px;
+        height: 22px;
+        }
+}
+
+
+.header_text{
+	  position: relative;
+	  bottom: -87px;
+      width: 320px;
+	  text-align: left;
+      font-family: $font-2;
+      font-weight: 100;
+	  color: $text-color;
+      font-size: 10px;
+      padding-bottom: 20px;
+	  
+}
+
+
+.header_button{
+	bottom: -90px;
+	@include button;
+
+}
+
+
+.section{
+    position: map-get($section,"position");
+	left: map-get($section,"left");
+    z-index: map-get($section,"z-index");
+	bottom: map-get($section,"bottom");
+	height: map-get($section,"height");
+    width: map-get($section,"width");
+ 
+}
+
+
+.section_card_wrap{
+	
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+	
+    
+}
+	
+	
+
+.section_card{
+	position: relative;
+	right: 70px;
+	
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-bottom: map-get($card, "margin-bottom");
+   border-radius: map-get($card, "border-radius");
+   height: map-get($card, "height");
+   width: map-get($card, "width");
+   background-color: $cards-footer-color;
+   color: white;
+}
+
+
+.section_text{
+    position: relative;
+	padding-top:320px;
+    margin-bottom:30px;
+    padding-left: 370px;
+    color: $text-color;
+    font-weight: 600;
+    font-size: 30px;
+	font-family: $font-1;
+
+
+   &::before{
+    content: "";
+    position: absolute;
+	background-color: $before-attribute-color;
+	z-index:-1;
+    width: 135px;
+    top: 315px;
+    left:525px;
+    height: 40px;
+    
+}}
+
+.section_card_heading{
+		position: relative;
+		top: 35px;
+		left: 88px;
+        z-index:1;
+        font-family: $font-2;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+
+
+.section_link{
+	position: relative;
+    bottom: 20px;
+    left: 105px;
+	font-size: 12px;
+	@include link;
+	
+	
+}
+
+
+.section_card_wrap div:nth-child(1) img:nth-child(1){
+		@include cards;
+	  	width: 250px;
+	    right: $card1-position;}
+
+.section_card:nth-child(1) p:nth-child(2) {
+	
+		@include child2;
+        width: $card1-text-width;
+	
+}
+
+.section_card_wrap div:nth-child(2) img:nth-child(1){
+		@include cards;
+	  	width: 240px;
+	    right: $card3-position;}
+
+	.section_card:nth-child(2) p:nth-child(2) {
+	
+		@include child2;
+        width: $card2-text-width;
+	
+}
+
+.section_card_wrap div:nth-child(3) img:nth-child(1){
+		@include cards;
+	  	width: 265px;
+	    right: $card3-position;}
+
+.section_card:nth-child(3) p:nth-child(2) {
+	
+		@include child2;
+	    right: 10px;
+		width: $card3-text-width;
+	
+}
+
+
+.section_banner{
+    position: absolute;
+	left: 170px;
+    z-index: -1;
+	height: 104px;
+    margin-top: 70px;
+	width: 720px;
+    background: $banner-gradient;
+	border-radius: 5px;
+
+    }
+
+   .section_banner_text_wrap{
+	   padding-left: 80px;
+
+
+      
+    &::before{
+    content: "";
+    position: absolute;
+	background-color: $before-attribute-color;
+	z-index:-1;
+	width: 55px;
+    top: 12px;
+    left:180px;
+    height: 38px;
+        
+       }
+}
+
+    .section_banner_heading{
+        position: relative;
+		z-index: 1;
+        color: $header-text-color;
+        font-family: $font-1;
+        font-weight: 800;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    .section_banner_text{
+		position: relative;
+		top: 8px;
+        color: white;
+        font-family: $font-1;
+        font-weight: 100;
+        font-size: 13px;
+    }
+
+    .section_banner_button{
+          @extend .header_button;
+          float: right;
+          position: relative;
+          bottom: 35px;
+          right:73px;
+		
+		
+
+    }
+
+.footer{
+	
+	height: 200px;
+    width: 1100px;
+    background-color: $cards-footer-color;
+    position: absolute;
+    top: 1280px;
+	left: 80px;
+	z-index: -10;}
+	
+	
+	.footer-wrap{
+    display: flex;
+    justify-content: space-around;
+	
+	
+	
+  p{
+		
+	color: $footer-logo-color;	}
+	
+   span{	
+    color: $footer-logo-color;
+	font-size: 8px;}	
+	
+
+	
+   .footer_logo{
+	position: relative;
+	top: 100px;
+	
+   }
+   
+
+   
+
+
+     .footer_text{
+		 position: relative;
+		 top: 90px;
+		 left: 75px;
+		 padding-top: 28px;
+         font-size: 9px;
+         font-family: $font-2;
+         width: 200px;
+		 color: white;
+     }
+
+     .footer-cr{
+		  position: relative;
+		 top: 80px;
+		 left: 125px;
+         padding-top: 40px;
+         font-size: 12px;
+         font-family: $font-2;
+         width: 300px;
+		 color: white;
+     }
+}
+
+
+

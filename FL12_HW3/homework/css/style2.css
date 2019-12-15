@@ -1,0 +1,298 @@
+body {
+  background-color: #1b1b2a; }
+
+body, p {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  position: relative;
+  left: 70px;
+  display: flex;
+  height: 570px;
+  width: 1100px;
+  border-bottom-right-radius: 500px 140px;
+  z-index: 1;
+  background-image: url(../img/m-h-night.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -150px; }
+
+.login {
+  position: absolute;
+  left: 280px;
+  top: 440px;
+  font-size: 13px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.landing-logo {
+  position: relative;
+  top: 145px;
+  padding-top: 20px;
+  padding-bottom: 30px; }
+
+.landing-logo img {
+  height: 30px;
+  width: 30px; }
+
+.landing-logo p {
+  position: relative;
+  bottom: 39px;
+  left: 28px;
+  font-family: "Hind", sans-serif;
+  font-size: 17px;
+  margin-left: 10px;
+  font-weight: 700;
+  color: white; }
+
+.landing-logo span {
+  position: relative;
+  top: 12px;
+  right: 43px;
+  color: white;
+  font-size: 8px;
+  font-weight: 500; }
+
+.header-wrap {
+  margin-left: 100px; }
+
+.header_heading {
+  position: relative;
+  bottom: -134px;
+  z-index: 1;
+  line-height: 95%;
+  width: 340px;
+  color: white;
+  font-size: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
+  padding-bottom: 70px; }
+  .header_heading::before {
+    content: "";
+    position: absolute;
+    background-color: #fc5011;
+    z-index: -1;
+    top: 51px;
+    width: 174px;
+    height: 22px; }
+
+.header_text {
+  position: relative;
+  bottom: -87px;
+  width: 320px;
+  text-align: left;
+  font-family: "Hind", sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 10px;
+  padding-bottom: 20px; }
+
+.header_button, .section_banner_button {
+  bottom: -90px;
+  position: relative;
+  padding: 7px 25px 7px 25px;
+  border-radius: 3px;
+  background-color: #f3951e;
+  color: white;
+  border: none; }
+
+.section {
+  position: relative;
+  left: 120px;
+  z-index: -2;
+  bottom: 290px;
+  height: 595px;
+  width: 1190px; }
+
+.section_card_wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 5px; }
+
+.section_card {
+  position: relative;
+  right: 70px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  height: 200px;
+  width: 680px;
+  background-color: #232a39;
+  color: white; }
+
+.section_text {
+  position: relative;
+  padding-top: 320px;
+  margin-bottom: 30px;
+  padding-left: 370px;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Source Sans Pro", sans-serif; }
+  .section_text::before {
+    content: "";
+    position: absolute;
+    background-color: #fc5011;
+    z-index: -1;
+    width: 135px;
+    top: 315px;
+    left: 525px;
+    height: 40px; }
+
+.section_card_heading {
+  position: relative;
+  top: 35px;
+  left: 88px;
+  z-index: 1;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  font-size: 15px; }
+
+.section_link {
+  position: relative;
+  bottom: 20px;
+  left: 105px;
+  font-size: 12px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.section_card_wrap div:nth-child(1) img:nth-child(1) {
+  position: relative;
+  border-radius: 12px;
+  padding: 8px;
+  width: 250px;
+  right: 58px; }
+
+.section_card:nth-child(1) p:nth-child(2) {
+  position: relative;
+  top: 60px;
+  text-align: justify;
+  justify-content: space-between;
+  font-family: "Fresca", sans-serif;
+  height: 150px;
+  font-size: 11px;
+  width: 300px; }
+
+.section_card_wrap div:nth-child(2) img:nth-child(1) {
+  position: relative;
+  border-radius: 12px;
+  padding: 8px;
+  width: 240px;
+  right: 56px; }
+
+.section_card:nth-child(2) p:nth-child(2) {
+  position: relative;
+  top: 60px;
+  text-align: justify;
+  justify-content: space-between;
+  font-family: "Fresca", sans-serif;
+  height: 150px;
+  font-size: 11px;
+  width: 315px; }
+
+.section_card_wrap div:nth-child(3) img:nth-child(1) {
+  position: relative;
+  border-radius: 12px;
+  padding: 8px;
+  width: 265px;
+  right: 56px; }
+
+.section_card:nth-child(3) p:nth-child(2) {
+  position: relative;
+  top: 60px;
+  text-align: justify;
+  justify-content: space-between;
+  font-family: "Fresca", sans-serif;
+  height: 150px;
+  font-size: 11px;
+  right: 10px;
+  width: 290px; }
+
+.section_banner {
+  position: absolute;
+  left: 170px;
+  z-index: -1;
+  height: 104px;
+  margin-top: 70px;
+  width: 720px;
+  background: linear-gradient(to right, #fa9819, #4c1919);
+  border-radius: 5px; }
+
+.section_banner_text_wrap {
+  padding-left: 80px; }
+  .section_banner_text_wrap::before {
+    content: "";
+    position: absolute;
+    background-color: #fc5011;
+    z-index: -1;
+    width: 55px;
+    top: 12px;
+    left: 180px;
+    height: 38px; }
+
+.section_banner_heading {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  padding-top: 20px; }
+
+.section_banner_text {
+  position: relative;
+  top: 8px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 100;
+  font-size: 13px; }
+
+.section_banner_button {
+  float: right;
+  position: relative;
+  bottom: 35px;
+  right: 73px; }
+
+.footer {
+  height: 200px;
+  width: 1100px;
+  background-color: #232a39;
+  position: absolute;
+  top: 1280px;
+  left: 80px;
+  z-index: -10; }
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-around; }
+  .footer-wrap p {
+    color: white; }
+  .footer-wrap span {
+    color: white;
+    font-size: 8px; }
+  .footer-wrap .footer_logo {
+    position: relative;
+    top: 100px; }
+  .footer-wrap .footer_text {
+    position: relative;
+    top: 90px;
+    left: 75px;
+    padding-top: 28px;
+    font-size: 9px;
+    font-family: "Hind", sans-serif;
+    width: 200px;
+    color: white; }
+  .footer-wrap .footer-cr {
+    position: relative;
+    top: 80px;
+    left: 125px;
+    padding-top: 40px;
+    font-size: 12px;
+    font-family: "Hind", sans-serif;
+    width: 300px;
+    color: white; }
+
