@@ -1,0 +1,13 @@
+
+h3 { display: block; height: 10px;}
+
+
+h3:hover {cursor: pointer;}
+
+ul { padding-left: 20px;}
+
+i { color: yellow;} 
+
+
+
+.folder i { color: yellow;}
